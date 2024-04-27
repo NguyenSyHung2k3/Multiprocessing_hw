@@ -21,7 +21,7 @@ int main(){
     struct sockaddr_in addr;
     addr.sin_family = AF_INET;
     addr.sin_addr.s_addr = htonl(INADDR_ANY);
-    addr.sin_port = htons(9006);
+    addr.sin_port = htons(9000);
 
     // Gan socket voi cau truc dia chi
     if (bind(listener, (struct sockaddr *)&addr, sizeof(addr))) {
